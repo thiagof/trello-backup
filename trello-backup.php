@@ -15,6 +15,9 @@ if ($argc == 2) {
 
 require_once $config_file;
 
+// No execution time limit
+set_time_limit(0);
+
 // If the application_token looks incorrect we display help
 if (strlen($application_token) < 30) {
     // 0) Fetch the Application tokenn
